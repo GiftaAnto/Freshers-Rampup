@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-25 01:02:34 PM"/>
+        <attribute name="created" value="aHA7TEFQVE9QLTc2REFMOExQOzIwMjAtMTEtMjU7MTI6NDc6MjMgUE07MjUzMQ=="/>
+        <attribute name="edited" value="aHA7TEFQVE9QLTc2REFMOExQOzIwMjAtMTEtMjU7MDE6MDI6MzQgUE07MTsyNjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="range" type="Integer" array="False" size=""/>
+            <declare name="temp1" type="Integer" array="False" size=""/>
+            <assign variable="temp1" expression="0"/>
+            <declare name="temp2" type="Integer" array="False" size=""/>
+            <assign variable="temp2" expression="1"/>
+            <declare name="next" type="Integer" array="False" size=""/>
+            <assign variable="next" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter range&quot;" newline="True"/>
+            <input variable="range"/>
+            <for variable="i" start="0" end="range-1" direction="inc" step="1">
+                <output expression="temp1" newline="True"/>
+                <assign variable="next" expression="temp1 + temp2"/>
+                <assign variable="temp1" expression="temp2"/>
+                <assign variable="temp2" expression="next"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
